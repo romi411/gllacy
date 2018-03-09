@@ -5,7 +5,11 @@ $(function(){
     autoplay:true,
     autoplaySpeed: 4000,
     speed: 800,
-	});
+  });
+
+  setTimeout(function() {
+    $('#test').styler()
+  }, 100);
 });
 
 function initMap() {
@@ -21,4 +25,4 @@ function initMap() {
     position: uluru,
     map:map,
 });
-}
+};

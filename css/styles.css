@@ -1006,3 +1006,316 @@ img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png"]
   line-height: 18px;
   color: #fff;
 }
+
+/* catalog */
+
+#catalog .main{
+  margin-top: 100px;
+}
+#catalog .main-header{
+  left: 50%;
+}
+
+/*breadcrumbs*/
+
+.breadcrumbs__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.breadcrumbs__item{
+  position: relative;
+  margin-right: 22px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.breadcrumbs__item::after{
+  content: "»";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-left: 8px;
+}
+.breadcrumbs__item:last-child::after{
+  display: none;
+}
+.breadcrumbs__link{
+  font-size: 14px;
+  line-height: 16px;
+}
+
+/* main-filter */
+.main-filter{
+  /* outline: 1px solid red; */
+  width: 861px;
+  margin-bottom: 40px;
+}
+.main-filter__title{
+  margin: 0;
+  padding: 0;
+  font-size: 35px;
+  line-height: 41px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.filter{
+  display: flex;
+  flex-wrap: wrap;
+  /* outline: 1px solid green; */
+}
+.sort{
+  width: 195px;
+  margin-right: 65px;
+  margin-bottom: 20px;
+}
+.sort label{
+  display: flex;
+  flex-wrap: wrap;
+  /* outline: 1px solid gold; */
+}
+.filter__title{
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 16px;
+  padding-left: 17px;
+  margin-bottom: 8px;
+  font-family: 'Roboto Medium', Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.sort__select{
+  width: 195px;
+  padding: 10px;
+  border: none;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.sort__select_wrap{
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+
+.price{
+  /* outline: 1px solid red; */
+  margin-right: 15px;
+}
+.wrap_slider-range{
+  height: 36px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  padding: 8px 13px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#slider-range{
+ height: 4px;
+ border-radius: 0px;
+ background-color: rgba(255, 255, 255, 0.5);
+ top: 50%;
+ transform: translateY(-50%);
+ border: none;
+}
+.price__text{
+  background-color: transparent;
+  border: none;
+}
+#slider-range .ui-slider-range{
+  background-color: #fff;
+}
+#slider-range .ui-slider-handle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-top: -3px;
+  cursor: pointer;
+  border: none;
+}
+#slider-range .ui-slider-handle:hover{
+  background-color: #fff;
+}
+#slider-range .ui-slider-handle::after{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: #ababab;
+}
+
+/*richness*/
+.richness{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  /* outline: 1px solid silver; */
+}
+.richness .bc-filter{
+  justify-content: space-between;
+}
+.bc-filter{
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  height: 36px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Roboto Medium';
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 7px 15px;
+  border-radius: 20px;
+}
+.bc-filter label{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+  color: #fff !important;
+  opacity: 0.8;
+  /* outline: 1px solid blue; */
+}
+.bc-filter label:last-child{
+  margin-right: 0;
+}
+.bc-filter label:hover{
+  opacity: 1;
+}
+.bc-filter label input:disabled{
+  opacity: 0.2;
+}
+.radio-btn{
+  position: absolute;
+  left: 1px;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 22px;
+  width: 22px;
+  border: 3px solid rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  background-color: transparent;
+}
+input[type="radio"]:checked+.radio-btn::before{
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 8px;
+  width: 8px;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+}
+.extender label{
+  position: relative;
+  cursor: pointer;
+  /* outline: 1px solid yellow; */
+}
+.checkbox-btn{
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  box-sizing: border-box;
+  height: 20px;
+  width: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+}
+.extender{
+  margin-right: 15px;
+  flex: 1;
+}
+.extender .bc-filter{
+  justify-content: space-between;
+}
+.extender__input:checked+.checkbox-btn::before{
+  content: "";
+  position: absolute;
+  bottom: 3px;
+  left: 34%;
+  height: 17px;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #aabbb2;
+  transform-origin: right bottom;
+  transform: rotate(45deg);
+}
+.extender__input:checked+.checkbox-btn::after{
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 56%;
+  height: 9px;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform-origin: right bottom;
+  transform: rotate(-45deg);
+}
+.btn_fiter{
+  align-self: flex-end;
+  height: 37px;
+  border-radius: 20px;
+  border: 2px solid #f5f6f5;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: 'Roboto Medium';
+  padding: 0 30px;
+  cursor: pointer;
+}
+.btn_fiter:hover{
+  background-color: #f5f6f5;
+  border: 2px solid transparent;
+  color: #000;
+}
+.btn_fiter:active{
+  border: 2px solid transparent !important;
+  box-shadow:inset 0 2px 1px #696969;
+}
+.pagination{
+  margin-top: 40px;
+}
+.pagination__list{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* outline: 1px solid red; */
+}
+.pagination__item{
+  margin-left: 5px;
+}
+.pagination__link{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  /* outline: 1px solid gold; */
+  color: #fff;
+  font-size: 16px;
+  line-height: 18px;
+}
+.pagination__link_select,
+.pagination__link:hover{
+  background: #fff;
+  color: #000;
+}
+.pagination__link_arrow{
+  opacity: 0.2;
+}
+.pagination__link_arrow:hover{
+  opacity: 1;
+  color: #fff;
+  background-color: transparent;
+}
